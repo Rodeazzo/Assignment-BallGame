@@ -14,7 +14,14 @@ public class LevelManager : MonoBehaviour {
     {
         SceneManager.LoadScene(sceneName);
     }
-
+    /*
+    public void LoadNextScene()
+    {
+        // Store index of current scene in variable currentScene
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentScene + 1);
+    }
+    */
     public void QuitGame()
     {
         UnityEditor.EditorApplication.isPlaying = false;
