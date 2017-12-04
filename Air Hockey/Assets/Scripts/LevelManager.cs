@@ -7,21 +7,15 @@ public class LevelManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+        Cursor.visible = true;
+    }
 
     public void LoadGame(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+        Cursor.visible = false;
     }
-    /*
-    public void LoadNextScene()
-    {
-        // Store index of current scene in variable currentScene
-        int currentScene = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentScene + 1);
-    }
-    */
+
     public void QuitGame()
     {
         UnityEditor.EditorApplication.isPlaying = false;
