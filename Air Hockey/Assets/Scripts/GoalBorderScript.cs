@@ -17,6 +17,7 @@ public class GoalBorderScript : MonoBehaviour {
     void Start () {
         p1Score = 0;
         p2Score = 0;
+        scoreDisplay.text = "0";
 
         // Get current scene index
         currentScene = SceneManager.GetActiveScene().buildIndex;
