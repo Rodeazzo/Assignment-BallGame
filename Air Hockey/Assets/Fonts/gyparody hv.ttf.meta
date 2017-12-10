@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 243f55459dde97d43a0a291abf4d84f4
-timeCreated: 1512152464
+guid: 7136805cd97416f4f957015f3e64e8df
+timeCreated: 1512913082
 licenseType: Free
 TrueTypeFontImporter:
   serializedVersion: 4
@@ -9,10 +9,11 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Crack Man
+  fontName: Gyparody
   fontNames:
-  - Crack Man
-  fallbackFontReferences: []
+  - Gyparody
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3abd59886e03ba548b6221fd0ab3934c, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\MovingObstacleScript.cs" />
     <Compile Include="Assets\Scripts\PuckScript.cs" />
     <Compile Include="Assets\Scripts\RedPaddleScript.cs" />
+    <Compile Include="Assets\Scripts\WinnerScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

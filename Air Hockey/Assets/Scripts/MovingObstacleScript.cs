@@ -9,8 +9,8 @@ public class MovingObstacleScript : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		pointA = new Vector3(posX, -1, 1);
-        pointB = new Vector3(posX, 1, 1);
+		pointA = new Vector3(posX, -3, 2);
+        pointB = new Vector3(posX, 3, 2);
     }
 	
 	// Update is called once per frame

@@ -10,7 +10,7 @@ public class GoalBorderScript : MonoBehaviour {
     public Text scoreDisplay;
 
     int p1Score, p2Score;
-    int p1FinalScore, p2FinalScore;
+    public static int p1FinalScore, p2FinalScore, p1Total, p2Total;
     int currentScene;
 
     // Use this for initialization
@@ -29,6 +29,7 @@ public class GoalBorderScript : MonoBehaviour {
         {
             //print("Player 2 Scored!");
             p2Score+=1;
+            p2Total+=1;
             scoreDisplay.text = p2Score.ToString ();
             RestartPuck();
         }
@@ -36,6 +37,7 @@ public class GoalBorderScript : MonoBehaviour {
         {
             //print("Player 1 Scored!");
             p1Score+=1;
+            p1Total+=1;
             scoreDisplay.text = p1Score.ToString ();
             RestartPuck();
         }
