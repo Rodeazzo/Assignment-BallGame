@@ -23,6 +23,11 @@ public class LevelManager : MonoBehaviour {
         Cursor.visible = false;
     }
 
+    public static void LoadNextLevel(int currentScene)
+    {
+        SceneManager.LoadScene(currentScene + 1);
+    }
+
     public void QuitGame()
     {
         UnityEditor.EditorApplication.isPlaying = false;

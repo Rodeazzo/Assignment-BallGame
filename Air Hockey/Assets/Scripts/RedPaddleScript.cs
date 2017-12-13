@@ -11,7 +11,6 @@ public class RedPaddleScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
         float mousePos = (Input.mousePosition.y / Screen.height * 10) - 5;
 
         Vector3 newPaddlePos = new Vector3(this.transform.position.x, mousePos, 

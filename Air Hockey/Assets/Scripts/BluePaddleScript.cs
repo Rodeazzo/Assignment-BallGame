@@ -11,7 +11,6 @@ public class BluePaddleScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
         if (Input.GetKey(KeyCode.W))
         {
             Vector3 position = this.transform.position;

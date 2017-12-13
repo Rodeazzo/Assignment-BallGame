@@ -27,7 +27,7 @@ public class PuckScript : MonoBehaviour {
             gameStart = true;
 
             if (gameState == 0) {
-                // Start Game Random
+                // Start Game Random Angle
                 Vector3 v = Quaternion.AngleAxis(Random.Range(20.0f, 340.0f), Vector3.forward) * Vector3.up;
 
                 this.GetComponent<Rigidbody2D>().velocity = v * speed;
@@ -63,9 +63,6 @@ public class PuckScript : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.tag == "P1Goal")
-            print("You suck");
-
         if (gameStart && collision.collider.tag == "Border")
         {
             Vector2 tweak = new Vector2(Random.Range(-0.2f, 0.2f), Random.Range(0f, 0.2f));

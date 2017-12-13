@@ -54,44 +54,14 @@ public class GoalBorderScript : MonoBehaviour {
     // Update is called once per frame
     void Update () {
 
-        // Level 1
-        if (currentScene == 1) {
-            if (p1Score == playerScore || p2Score == playerScore)
-            {
-                if(p1Score > p2Score)
-                    p1FinalScore += 1;
-                else
-                    p2FinalScore += 1;
-
-                SceneManager.LoadScene(currentScene + 1);
-            }
-        }
-        // Level 2
-        else if (currentScene == 2)
+        if(p1Score == playerScore || p2Score == playerScore)
         {
-            if (p1Score == playerScore || p2Score == playerScore)
-            {
-                if (p1Score > p2Score)
-                    p1FinalScore += 1;
-                else
-                    p2FinalScore += 1;
+            if (p1Score > p2Score)
+                p1FinalScore += 1;
+            else
+                p2FinalScore += 1;
 
-                SceneManager.LoadScene(currentScene + 1);
-            }
-        }
-        // Level 3
-        else if (currentScene == 3)
-        {
-            if (p1Score == playerScore || p2Score == playerScore)
-            {
-                if (p1Score > p2Score)
-                    p1FinalScore += 1;
-                else
-                    p2FinalScore += 1;
-
-                SceneManager.LoadScene(currentScene + 1);
-                Cursor.visible = true;
-            }
+            LevelManager.LoadNextLevel(currentScene);
         }
     }
 }
