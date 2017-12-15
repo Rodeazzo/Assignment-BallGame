@@ -24,14 +24,14 @@ public class WinnerScript : MonoBehaviour {
         
         if (currentScene == 4)
         {
-            if (p1Wins > p2Wins)
+            if (p1Total > p2Total)
             {
                 winnerDisplay.text = "<color=#0000ffff>Player 1</color> Total Goals - " + p1Total + "\t Games Won - " + p1Wins + "\n" +
                                      "<color=#ff0000ff>Player 2</color> Total Goals - " + p2Total + "\t Games Won - " + p2Wins +
                                      "\n\n<color=#0000ffff>Player 1</color> Wins! \n \n Thank you for playing!";
 
             }
-            else if (p1Wins > p2Wins)
+            else if (p2Total > p1Total)
             {
                 winnerDisplay.text = "<color=#0000ffff>Player 1</color> Total Goals - " + p1Total + "\t Games Won - " + p1Wins + "\n" +
                                      "<color=#ff0000ff>Player 2</color> Total Goals - " + p2Total + "\t Games Won - " + p2Wins +

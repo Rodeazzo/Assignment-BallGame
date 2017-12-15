@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GoalBorderScript : MonoBehaviour {
 
-    public int playerScore;
+    public int playerScore, scoreMultiplier;
     public Text scoreDisplay;
 
     int p1Score, p2Score;
@@ -28,16 +28,16 @@ public class GoalBorderScript : MonoBehaviour {
         if (this.tag == "P1Goal")
         {
             //print("Player 2 Scored!");
-            p2Score+=1;
-            p2Total+=1;
+            p2Score+=scoreMultiplier;
+            p2Total+=scoreMultiplier;
             scoreDisplay.text = p2Score.ToString ();
             RestartPuck();
         }
         else if (this.tag == "P2Goal")
         {
             //print("Player 1 Scored!");
-            p1Score+=1;
-            p1Total+=1;
+            p1Score+=scoreMultiplier;
+            p1Total+=scoreMultiplier;
             scoreDisplay.text = p1Score.ToString ();
             RestartPuck();
         }
